@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		72A3785A22A660C300390EC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A3785922A660C300390EC1 /* AppDelegate.swift */; };
-		72A3785C22A660C300390EC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A3785B22A660C300390EC1 /* ViewController.swift */; };
+		72A3785C22A660C300390EC1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A3785B22A660C300390EC1 /* MainViewController.swift */; };
 		72A3785F22A660C300390EC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A3785D22A660C300390EC1 /* Main.storyboard */; };
 		72A3786122A660C400390EC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A3786022A660C400390EC1 /* Assets.xcassets */; };
 		72A3786422A660C400390EC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A3786222A660C400390EC1 /* LaunchScreen.storyboard */; };
+		72A3786F22A6637800390EC1 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A3786E22A6637800390EC1 /* Camera.storyboard */; };
+		72A3787122A6638400390EC1 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A3787022A6638400390EC1 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		72A3785622A660C300390EC1 /* ARKitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A3785922A660C300390EC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		72A3785B22A660C300390EC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72A3785B22A660C300390EC1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		72A3785E22A660C300390EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72A3786022A660C400390EC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72A3786322A660C400390EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72A3786522A660C400390EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72A3786E22A6637800390EC1 /* Camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
+		72A3787022A6638400390EC1 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,32 @@
 		72A3785822A660C300390EC1 /* ARKitTest */ = {
 			isa = PBXGroup;
 			children = (
+				72A3786D22A6635500390EC1 /* Main */,
+				72A3786B22A6634000390EC1 /* Camera */,
 				72A3785922A660C300390EC1 /* AppDelegate.swift */,
-				72A3785B22A660C300390EC1 /* ViewController.swift */,
-				72A3785D22A660C300390EC1 /* Main.storyboard */,
 				72A3786022A660C400390EC1 /* Assets.xcassets */,
 				72A3786222A660C400390EC1 /* LaunchScreen.storyboard */,
 				72A3786522A660C400390EC1 /* Info.plist */,
 			);
 			path = ARKitTest;
+			sourceTree = "<group>";
+		};
+		72A3786B22A6634000390EC1 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				72A3786E22A6637800390EC1 /* Camera.storyboard */,
+				72A3787022A6638400390EC1 /* CameraViewController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		72A3786D22A6635500390EC1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				72A3785B22A660C300390EC1 /* MainViewController.swift */,
+				72A3785D22A660C300390EC1 /* Main.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72A3786422A660C400390EC1 /* LaunchScreen.storyboard in Resources */,
+				72A3786F22A6637800390EC1 /* Camera.storyboard in Resources */,
 				72A3786122A660C400390EC1 /* Assets.xcassets in Resources */,
 				72A3785F22A660C300390EC1 /* Main.storyboard in Resources */,
 			);
@@ -135,8 +158,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72A3785C22A660C300390EC1 /* ViewController.swift in Sources */,
+				72A3785C22A660C300390EC1 /* MainViewController.swift in Sources */,
 				72A3785A22A660C300390EC1 /* AppDelegate.swift in Sources */,
+				72A3787122A6638400390EC1 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
